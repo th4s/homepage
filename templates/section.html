@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block header %}
+<title>{{section.title}}</title>
+<meta name="description" content="{{section.description}}">
+<meta name="keywords" content="{{section.extra.keywords}}">
+<meta property="og:title" content="{{section.title}}">
+<meta property="og:url" content="{{section.permalink}}">
+<meta property="og:description" content="{{section.description}}"> 
+{% endblock header %}
+
+{% block body %}
+<div class="header">
+    <h1 class="not-mobile">{{section.title}}</h1>
+    <h2 class="only-mobile">{{section.title}}</h2>
+</div>
+<div class="content">
+    {{ section.content | safe }}
+    {% if section.pages %}
+        <h2>Articles</h2>
+        {% for page in section.pages %}
+            <a href="{{page.permalink}}">{{page.title}}</a>
+        {% endfor %}
+    {% endif %}
+</div>
+{% endblock body %}

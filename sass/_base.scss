@@ -1,0 +1,122 @@
+@import "./colors";
+@import "./fontawesome/fontawesome";
+@import "./fontawesome/solid";
+@import "./fontawesome/brands";
+@import "./highlight";
+
+@media screen and (min-width: 64em) {
+    body {
+        margin: auto 20%;
+    }
+}
+
+@media screen and (min-width: 48em) and (max-width: 64em){
+    body {
+        margin: auto 15%;
+    }
+}
+
+@media screen and (min-width: 35em) and (max-width: 48em) {
+    body {
+        margin: auto 10%;
+    }
+}
+
+@media screen and (max-width: 35em) {
+    body {
+        margin: auto 5% auto 2%;
+    }
+}
+
+body {
+    background-color: $m-black;
+    height: 100%;
+    margin-top: 2em;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 16.5px;
+    color: $m_yellow;
+}
+
+@media screen and (max-width: 48em) {
+    .not-mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .only-mobile {
+        display: none;
+    }
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+
+    h1 {
+        color: $m_red;
+        font-size: 3em;
+    }
+
+    h2 {
+        color: $m_red;
+        font-size: 2em;
+    }
+}
+
+.navbar {
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        padding-right: 20px;
+    }
+
+    li {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 0.1em;
+        color: $m_green;
+    } 
+
+    li:hover {
+        background-color: $m_gray;
+    }
+
+    li:before {
+        content: "/ ";
+        color: $m_blue;
+    }
+
+    a {
+        text-decoration: none;
+        color: $m_green;
+    }
+
+    a:visited {
+        color: inherit;
+    }
+
+    img {
+        margin-bottom: 6em;
+        align-items: center;
+    }
+}
+
+.content {
+    margin-bottom: 20px;
+    a {
+        text-decoration: none;
+        color: $m_blue;
+    }
+
+    a:visited {
+        color: $m_blue;
+    }
+}

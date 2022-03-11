@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Purecss stylesheets -->
+        <link rel="stylesheet"
+              href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+              integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5"
+              crossorigin="anonymous">
+        <link rel="stylesheet" 
+              href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" 
+              integrity="sha384-TxqXEM39LKAlr6mwXYlM8+n31/tjeQXzvjbORoLHWeLhkNhWoa9WkMJO/IIghaek"
+              crossorigin="anonymous">
+
+        <!-- Custom stylesheets -->
+        <link rel="stylesheet" href="{{get_url(path="style.css")}}">
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" value="summary">
+
+        <!-- Open Graph data -->
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="{{config.base_url}}/image.png">
+
+        <!-- Other -->
+        <meta name="theme-color" content="#ffffff">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+        {% block header %} {% endblock %}
+    </head>
+
+    <body>
+
+        <div class="pure-g">
+            <!-- Navbar -->
+            <div class="navbar pure-u-6-24 pure-u-md-8-24 pure-u-xl-6-24">
+                <a href="/"><img class="pure-img" src="/image.png" width=128px height=128px></a>
+                <ul>
+                    <li><a href="/rust"><span class="not-mobile">rust/</span><i class="fa-fw fa-brands fa-rust only-mobile"></i></a></li>
+                    {% block toc_rust %} {% endblock %}
+                    <li><a href="/about"><span class="not-mobile">about/</span><i class="fa-fw fa-solid fa-user only-mobile"></i></a></li>
+                    {% block toc_about %} {% endblock %}
+                </ul>
+            </div>
+
+            <!-- Content -->
+            <div class="pure-u-18-24 pure-u-md-16-24 pure-u-xl-18-24">
+                {% block body %} {% endblock body %}
+            </div>
+        </div>
+    </body>
+</html>

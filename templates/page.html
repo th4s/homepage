@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block header %}
+<title>{{page.title}}</title>
+<meta name="description" content="{{page.description}}">
+<meta name="keywords" content="{{page.extra.keywords}}">
+<meta property="og:title" content="{{page.title}}">
+<meta property="og:url" content="{{page.permalink}}">
+<meta property="og:description" content="{{page.description}}"> 
+{% endblock header %}
+
+{% block body %}
+<div class="header">
+    <h1 class="not-mobile">{{page.title}}</h1>
+    <h2 class="only-mobile">{{page.title}}</h2>
+</div>
+<div class="content">
+    {{ page.content | safe }}
+</div>
+{% endblock body %}
