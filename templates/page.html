@@ -9,6 +9,12 @@
 <meta property="og:description" content="{{page.description}}"> 
 {% endblock header %}
 
+{% block navbar %}
+<ul>
+    <li><a href="javascript:history.back()"><span class="not-mobile">back/</span><i class="fa-fw fa-solid fa-arrow-left only-mobile"></i></a></li>
+</ul>
+{% endblock navbar %}
+
 {% block body %}
 <div class="header">
     <h1 class="not-mobile">{{page.title}}</h1>

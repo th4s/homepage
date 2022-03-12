@@ -58,7 +58,6 @@ html, button, input, select, textarea,
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-bottom: 2em;
 
     h1 {
         color: $m_red;
@@ -81,7 +80,7 @@ html, button, input, select, textarea,
     li {
         font-weight: bold;
         font-size: 1.2em;
-        margin-bottom: 0.1em;
+        margin-bottom: 0.3em;
         color: $m_green;
     } 
 
@@ -106,6 +105,15 @@ html, button, input, select, textarea,
     img {
         margin-bottom: 6em;
         align-items: center;
+    }
+}
+
+.sublist {
+    @extend .navbar;
+
+    li {
+        font-size: 0.8em;
+        margin-left: 15px;
     }
 }
 

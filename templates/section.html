@@ -9,6 +9,16 @@
 <meta property="og:description" content="{{section.description}}"> 
 {% endblock header %}
 
+{% block toc_rust %}
+    {% if section.title == "Rust"%}
+    <ul class="sublist">
+        {% for page in section.pages %}
+            <li><a href="{{page.permalink}}"><span class="not-mobile">{{page.title}}</span><i class="fa-fw {{page.extra.icon}} only-mobile"></i></a></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+{% endblock toc_rust %}
+
 {% block body %}
 <div class="header">
     <h1 class="not-mobile">{{section.title}}</h1>
@@ -16,11 +26,5 @@
 </div>
 <div class="content">
     {{ section.content | safe }}
-    {% if section.pages %}
-        <h2>Articles</h2>
-        {% for page in section.pages %}
-            <a href="{{page.permalink}}">{{page.title}}</a>
-        {% endfor %}
-    {% endif %}
 </div>
 {% endblock body %}

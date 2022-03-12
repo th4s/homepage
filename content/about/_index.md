@@ -6,8 +6,7 @@ description = "A few things about myself"
 keywords = "myself"
 +++
 
-## A little bit about myself
-Some time ago I have studied physics, but after graduation
+Alright, here is a little bit about myself. Some time ago I have studied physics, but after graduation
 I quickly lost interest, since except from research there is not really a job market for it,
 if you are inclined to theory. Then you usually have two options: Either you go into consulting
 or you start programming. I tried the first one and it really wasn't for me, so that I ended up doing

@@ -1,13 +1,12 @@
 +++
-title = "Grouping behavior - Generics, Enums, Traits"
+title = "On grouping mechanisms"
 description = "How to organize similar functionality in Rust"
 slug = "grouping-behavior"
 draft = true
 
 [extra]
 keywords = "rust, crate, generics, enum, traits, api"
+icon = "fa-solid fa-diagram-project"
 +++
 
-## This article is about a problem
 
-I frequently come along, when thinking about

@@ -38,17 +38,18 @@
             <!-- Navbar -->
             <div class="navbar pure-u-6-24 pure-u-md-8-24 pure-u-xl-6-24">
                 <a href="/"><img class="pure-img" src="/image.png" width=128px height=128px></a>
+                {% block navbar %}
                 <ul>
                     <li><a href="/rust"><span class="not-mobile">rust/</span><i class="fa-fw fa-brands fa-rust only-mobile"></i></a></li>
                     {% block toc_rust %} {% endblock %}
                     <li><a href="/about"><span class="not-mobile">about/</span><i class="fa-fw fa-solid fa-user only-mobile"></i></a></li>
-                    {% block toc_about %} {% endblock %}
                 </ul>
+                {% endblock %}
             </div>
 
             <!-- Content -->
             <div class="pure-u-18-24 pure-u-md-16-24 pure-u-xl-18-24">
-                {% block body %} {% endblock body %}
+                {% block body %} {% endblock %}
             </div>
         </div>
     </body>

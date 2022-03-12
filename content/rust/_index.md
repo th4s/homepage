@@ -6,9 +6,7 @@ description = "Some articles about my daily Rust adventures"
 keywords = "rust, programming"
 +++
 
-## Programming with :crab:
-
-is a lot of fun! Here you find my writings about adventures with the [Rust](https://rust-lang.org)
+Programming with :crab: is a lot of fun! Here you find my writings about adventures with the [Rust](https://rust-lang.org)
 programming language. I really like programming with it because
 - it empowers you to do a lot of different things, from low-level programming to 
   simple CLI programs and most of the time it feels pretty ergonomic,
