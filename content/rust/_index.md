@@ -6,16 +6,18 @@ description = "Some articles about my daily Rust adventures"
 keywords = "rust, programming"
 +++
 
-Programming with :crab: is a lot of fun! Here you find my writings about adventures with the [Rust](https://rust-lang.org)
-programming language. I really like programming with it because
-- it empowers you to do a lot of different things, from low-level programming to 
+Programming with :crab: is a lot of fun! Here you find my writings about
+adventures with the [Rust](https://rust-lang.org) programming language. I really
+like programming with it because
+- it empowers you to do a lot of different things, from low-level programming to
   simple CLI programs and most of the time it feels pretty ergonomic,
 - it is very fast, and comes close or is identical to C and C++ performance,
 - it comes with an awesome package management solution (:heart: Cargo), 
 - it is very strongly typed, so nearly all errors happen during compile time,
 - there is no error-prone, manual memory management like e.g. in C.
 
-For a first impression, here is a Rust version of [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz):
+For a first impression, here is a Rust version of
+[FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz):
 ```rust
 // Import support for env arguments from 
 // rust standard library
